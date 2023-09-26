@@ -1,0 +1,82 @@
+.cardContainer{
+    display:grid;
+    grid-template-rows: 100px, 100px, 100px;
+    grid-template-columns: 100px, 100px, 100px;
+    margin: 10px;
+    
+    
+}
+    
+.card {
+    width: 300px;
+    height: 350px; 
+    margin: 15px;
+    padding: 5px;
+    background-color:  #ccac44;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    box-shadow: 
+    0 0 7px rgb(255 240 243),
+    0 0 10px rgb(255 204 213),
+    0 0 13px rgb(255 179 193),
+    0 0 16px rgb(255 143 163),
+    0 0 19px rgb(255 117 143),
+    0 0 22px rgb(255 77 109);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #a40411;
+    border-color: #121010;
+    border-width: 1px;
+    border: 1px solid #a30303;
+    
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+}
+
+.imgcard{
+    height: 260px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 90px;
+    border-color: #121010;
+}
+
+.cardinfotext {
+    display: inline-grid;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px;
+    background-color: #8b0510;
+    color:white;
+    max-width: 400px;
+    height: 30px;
+    width: 240px;
+    margin-left: -25px;
+    border-radius: 15px;
+}
+
+.textOverflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.nametxt {
+    display: inline-block;
+    max-height: 2px;
+    color:#731502;
+    margin: -1px;
+    font-size: 16px;
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; */
+}
+
+
+
+

@@ -1,0 +1,286 @@
+
+.body{
+    background-image: url('../../assets/backgroundLegend2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+.titulo {
+    text-align: center;
+    font-weight: 300px;
+    font-size: 20px;
+    
+    font-family: "Playfair Display SC";
+    color: rgb(170, 5, 5);
+}
+
+.box_form {
+    background-color: rgba(159, 141, 4, 0.8);
+    padding: 20px 0;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    box-shadow: 
+    0 0 5px rgb(255 240 243),
+    0 0 10px rgb(255 204 213),
+    0 0 15px rgb(255 179 193),
+    0 0 20px rgb(255 143 163),
+    0 0 25px rgb(255 117 143),
+    0 0 30px rgb(255 77 109);
+    height: fit-content;
+    /* display: inline-block; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40vw;
+    max-width: 800px;
+    display:flex;
+    flex-direction: row;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+.grupo {
+    position: relative;
+    margin: 45px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.create_input {
+    background: none;
+    color: #0d0d0d;
+    font-size: 14px;
+font-family: 'Times New Roman', Times, serif;
+font-style: bold;
+    padding: 4px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #49454567;
+}
+
+.create_input:focus {
+    outline: none;
+    color:#0c0c0c;
+    
+}
+
+.create_input:focus~.label,
+.create_input:valid~.label {
+    top: -14px;
+    font-size: 15px;
+    color: #100f0f;
+    font-style: bold;
+}
+.create_input:focus~.barra::before{
+    width: 100%;
+}
+
+
+.textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 60px;
+    max-height: 120px;
+    padding: 10px;
+    background: rgb(212, 184, 184);
+    outline: none;
+    color: black;
+    font-family: monospace;
+    font-size: 1.2em;
+    border: solid 5px #76040467;
+    border-style: groove;
+    
+}
+
+
+.label {
+    color: rgb(144, 5, 5);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1px;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    transition: 0.5s all;
+    pointer-events: none;
+}
+.description { 
+    color:  rgb(144, 5, 5);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    transition: 0.5s all;
+    pointer-events: none;
+}
+
+.btn_submit{
+    font-family: system-ui;
+    background:  rgb(170, 5, 5);
+    align-content: center;
+    size: 50px;
+    border: 1px solid;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px ;
+    color: #fff;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 
+    0 0 2px rgb(255 240 243), 
+    0 0 4px rgb(255 204 213), 
+    0 0 6px rgb(255 179 193), 
+    0 0 8px rgb(255 143 163), 
+    0 0 10px rgb(255 117 143), 
+    0 0 12px rgb(255 77 109);
+}
+
+.select_create {
+    background-color: #FFCDB2;
+    color: black;
+    padding: 7px;
+    font-size: 16px;
+    appearance: button;
+    outline: none;
+    margin: 10px;
+    font-family: system-ui;
+}
+
+.select_create .option_create {
+padding: 30px;
+}
+
+.danger {
+    color: #d90429;
+    line-height: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.box_opcion {
+display: inline-block;
+margin-right: 10px;
+margin-bottom: 15px;
+background-color: #fbb1bd;
+padding: 5px;
+border-radius: 5px;
+}
+
+.opcion_title {
+display: inline-block;
+margin-right: 10px;
+font-size: 12px;
+}
+
+.btn_remove {
+display: flex;
+flex-direction: column;
+width: 30px;
+text-align: center;
+width: 5%;
+padding: 10px;
+margin: 10px ;
+height: 20px;
+background: #a4133c;
+}
+
+.x {
+    color: white;
+}
+.spanx{
+    display:flex;
+    flex-direction: row;
+}
+
+.box_home {
+margin-top: 20px;
+}
+
+.back_home {
+    font-family: system-ui;
+    background:  rgb(170, 5, 5);
+    align-content: center;
+    size: 50px;
+    border: 1px solid;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px ;
+    color: #fff;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 
+    0 0 2px rgb(255 240 243), 
+    0 0 4px rgb(255 204 213), 
+    0 0 6px rgb(255 179 193), 
+    0 0 8px rgb(255 143 163), 
+    0 0 10px rgb(255 117 143), 
+    0 0 12px rgb(255 77 109);
+}
+
+.buttons{
+    margin-top: 500px;
+}
+
+.platformTitle{
+    color:  rgb(170, 5, 5);
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.platformContent{
+    float:left;
+    margin-left: 25px;
+
+}
+
+.genresPlatformContent{
+    
+    margin-left: 70px;
+    margin-right: 70px;
+    color: rgb(170, 5, 5);
+}
+
+.option_create{
+    border-color: black;
+    border-radius: 3px;
+}
+
+
+.barra{
+    /* position:relative; */
+    float:left;
+    display: block;
+    width: 50%;
+    color:  rgb(170, 5, 5);
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.barra::before{
+    content: "";
+    height: 1px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
